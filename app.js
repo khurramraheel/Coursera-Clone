@@ -385,13 +385,15 @@ app.post('/user/:id/AddCourse',uploadCourseVideo.single('courseImage') ,async (r
 
 // heroku deployment Code (comment it )
 
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"));
-    const path = require("path");
-    app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'client','build','index.html'));
-    })
-}
+// if(process.env.NODE_ENV === "production"){
+//     app.use(express.static("client/build"));
+//     const path = require("path");
+//     app.get("*",(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,'client','build','index.html'));
+//     })
+// }
+
+app.use(express.static("client/build"));
 
 app.listen(PORT,()=>{
     console.log(`Server is runing at ${PORT}`);
