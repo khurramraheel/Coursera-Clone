@@ -116,7 +116,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2,textDecoration:'none' }}>
-      <Link id='lnk' to='/'><h3 id='logo-heading'>couresra</h3></Link>
+      <Link id='lnk' to='/'><h3 id='logo-heading'>GAMICA</h3></Link>
       </Typography>
       <Divider />
       <List>
@@ -172,7 +172,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-                        <Link   id='lnk' to='/'><h3 id='logo-heading' >couresra</h3></Link>
+                        <Link   id='lnk' to='/'><h3 id='logo-heading' >GAMICA</h3></Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 

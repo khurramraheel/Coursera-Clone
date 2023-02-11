@@ -16,6 +16,8 @@ const DB = process.env.DATABASE_URI;
 
 let jsonwebtoken = require('jsonwebtoken');
 let app = express();
+
+app.use(cors());
 app.use(express.json());
 
 const connectDB=()=>{
