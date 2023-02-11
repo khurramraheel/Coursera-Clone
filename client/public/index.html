@@ -5,7 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <!-- <base href="http://courseraclone.cyclic.app" target="_blank"> -->
+    <base  target="_blank">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -29,6 +29,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+
+  window.onload = ()=>{
+
+    document.querySelector('base').href = "http://courseraclone.cyclic.app";
+
+  }
+
+</script>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
